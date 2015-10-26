@@ -5,7 +5,7 @@ var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 var os = require('os');
 
-describe('gulp-express-web:app', function () {
+describe('gulp-express-webapp:app', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../generators/app'))
       .withOptions({ skipInstall: true })
