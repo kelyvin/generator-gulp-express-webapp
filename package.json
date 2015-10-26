@@ -25,7 +25,7 @@
     "html",
     "jquery",
     "fontawesome",
-    "web",
+    "web"
   ],
   "dependencies": {
     "chalk": "^1.0.0",
