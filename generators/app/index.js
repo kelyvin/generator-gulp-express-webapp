@@ -16,6 +16,8 @@ module.exports = yeoman.generators.Base.extend({
             'Welcome to the awesome ' + chalk.red('GulpExpressWeb') + ' generator!'
         ));
 
+        this.log(chalk.magenta('Out of the box I include HTML5 Boilerplate, sass, an express server, and a gulpfile to build your app.'));
+
         var prompts = [{
             type: 'checkbox',
             name: 'features',
@@ -85,7 +87,7 @@ module.exports = yeoman.generators.Base.extend({
 
             this.fs.copy(
                 this.templatePath('favicon.ico'),
-                this.destinationPath('favicon.ico')
+                this.destinationPath('app/favicon.ico')
             );
         },
 
@@ -222,11 +224,22 @@ module.exports = yeoman.generators.Base.extend({
     },
 
     install: function() {
-        this.installDependencies();
+        this.installDependencies({
+            skipInstall: this.options.skipInstall
+        });
     },
 
     end: function() {
-        var bowerJson = this.fs.readJSON(this.destinationPath('bower.json'));
+        var bowerJson = this.fs.readJSON(this.destinationPath('bower.json')),
+            howToInstall = '\nAfter running ' +
+                chalk.yellow.bold('npm install & bower install') + ', inject your' +
+                '\nfront end dependencies by running ' +
+                chalk.yellow.bold('gulp wiredep') +'.';
+
+        if (this.options.skipInstall) {
+            this.log(howToInstall);
+            return;
+        }
 
         // wire Bower packages to .html
         wiredep({
