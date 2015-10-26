@@ -17,9 +17,15 @@
     "generators"
   ],
   "keywords": [
+    "yeoman",
     "yeoman-generator",
     "express",
-    "gulp"
+    "gulp",
+    "bootstrap",
+    "html",
+    "jquery",
+    "fontawesome",
+    "web",
   ],
   "dependencies": {
     "chalk": "^1.0.0",
