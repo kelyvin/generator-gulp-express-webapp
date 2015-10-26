@@ -1,0 +1,54 @@
+{
+    "private": true,
+    "engines": {
+        "node": ">=0.12.0"
+    },
+    "scripts": {
+        "start": "node app.js"
+    },
+    "devDependencies": {
+        "apache-server-configs": "^2.7.1",
+        "connect": "^3.0.1",
+        "connect-livereload": "^0.5.0",
+        "del": "^0.1.0",
+        "gulp": "^3.6.0",
+        "gulp-autoprefixer": "^1.0.1",
+        "gulp-cache": "^0.2.2",
+        "gulp-concat": "^2.5.2",
+        "gulp-csso": "^0.2.6",
+        "gulp-declare": "^0.3.0",
+        "gulp-filter": "^1.0.2",
+        "gulp-flatten": "^0.0.4",
+        "gulp-handlebars": "^4.0.0",
+        "gulp-if": "^1.2.1",
+        "gulp-imagemin": "^1.2.1",
+        "gulp-jshint": "^1.5.3",
+        "gulp-livereload": "^2.0.0",
+        "gulp-load-plugins": "^0.7.1",
+        "gulp-minify-html": "^0.1.6",
+        "gulp-plumber": "^0.6.3",
+        "gulp-replace": "^0.4.0",
+        "gulp-ruby-sass": "^0.7.1",
+        "gulp-size": "^1.1.0",
+        "gulp-uglify": "^1.0.1",
+        "gulp-useref": "^1.0.2",
+        "gulp-wrap": "^0.11.0",
+        "jshint-stylish": "^1.0.0",
+        "lazypipe": "^0.2.1",
+        "main-bower-files": "^2.1.0",
+        "opn": "^1.0.0",
+        "require-dir": "^0.3.0",
+        "serve-index": "^1.1.4",
+        "wiredep": "^2.0.0"
+    },
+    "dependencies": {
+        "body-parser": "^1.12.3",
+        "cookie-parser": "^1.3.4",
+        "ejs": "^2.3.1",
+        "express": "^4.12.3",
+        "gulp-cssimport": "^2.1.1",
+        "node-slack": "0.0.7",
+        "request": "^2.55.0",
+        "serve-static": "^1.4.0"
+    }
+}
