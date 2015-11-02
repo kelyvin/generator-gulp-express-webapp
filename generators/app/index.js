@@ -143,6 +143,10 @@ module.exports = yeoman.generators.Base.extend({
                 bowerJson.dependencies['font-awesome'] = '~4.4.0';
             }
 
+            // If no bower dependecies specified, create an empty bower_components folder
+            if (Object.keys(bowerJson.dependencies).length === 0) {
+                mkdirp('bower_components');
+            }
 
             this.fs.writeJSON('bower.json', bowerJson);
             this.fs.copy(
