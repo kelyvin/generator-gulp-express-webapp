@@ -1,4 +1,4 @@
-# generator-gulp-express-webapp [![Build Status for kelyvin/generator-gulp-express-webapp](https://codeship.com/projects/a4071f60-635d-0133-1a4e-16f6a7024b95/status?branch=master)](https://codeship.com/projects/112777)
+# generator-gulp-express-webapp
 
 > [Yeoman](http://yeoman.io) generator for building a simple web app using express + gulp. This scaffold provides a more well-defined project structure that is better suited for developing web apps.
 
