@@ -1,6 +1,6 @@
 {
   "name": "generator-gulp-express-webapp",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Yeoman generator for building a simple web app using express + gulp. This project contains proper project and build structure to be easily extensible.",
   "license": "MIT",
   "main": "app/index.js",
